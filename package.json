@@ -1,0 +1,38 @@
+{
+  "name": "hunts-photo-app",
+  "version": "1.0.0",
+  "description": "Hunt's Photo App",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node backend/server",
+    "server": "nodemon backend/server",
+    "client": "npm start --prefix frontend",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "dataImport": "node backend/seeder",
+    "dataDestroy": "node backend/seeder -d"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dbhinton/hunts-photo-app.git"
+  },
+  "author": "David Hinton",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dbhinton/hunts-photo-app/issues"
+  },
+  "homepage": "https://github.com/dbhinton/hunts-photo-app#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "colors": "^1.4.0",
+    "dotenv": "^10.0.0",
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "express-async-handler": "^1.2.0",
+    "mongoose": "^6.1.0"
+  },
+  "devDependencies": {
+    "concurrently": "^6.4.0",
+    "nodemon": "^2.0.15"
+  }
+}
