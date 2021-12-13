@@ -22,7 +22,7 @@ async function productDetail(req, res){
             res.json(product)
         }else{
             res.status(404)
-            throw new Error('product not found')
+            console.log(err)
         }
         
     } catch (error) {
