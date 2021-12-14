@@ -10,7 +10,7 @@ export default function Layout() {
         <div>
             <Header />
             <main className='py-3'>
-            <Outlet/>
+            <Outlet className="mt-4"/>
             </main>
             
 

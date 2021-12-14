@@ -13,21 +13,21 @@ import {
   Form,
 } from "react-bootstrap";
 import Rating from "../../components/Rating/Rating";
-import { getProductDetail } from "../../actions/productActions";
+import { getProductDetails } from "../../actions/productActions";
 import ErrorMessage from "../../components/ErrorMessage/ErrorMessage";
 import Loader from "../../components/Loader/Loader";
 
-export default function ProductDetail() {
+export default function ProductDetails() {
   const params = useParams();
   const navigate = useNavigate();
   const dispatch = useDispatch();
   const [qty, setQty] = useState(1);
 
-  const productDetail = useSelector((state) => state.productDetail);
-  const { loading, error, product } = productDetail;
+  const productDetails = useSelector((state) => state.productDetails);
+  const { loading, error, product } = productDetails;
 
   useEffect(() => {
-    dispatch(getProductDetail(params.id));
+    dispatch(getProductDetails(params.id));
   }, [dispatch, params]);
 
   const addToCartHandler = () => {
@@ -35,9 +35,12 @@ export default function ProductDetail() {
   }
 
   return (
-    <Container style={{ marginTop: "6rem" }}>
-      <Link to="/" className="btn">
+    <Container style={{ marginTop: "3rem" }}>
+      <Link to="/">
+        <Button variant="light" className="mb-5">
         Go Back
+        </Button>
+       
       </Link>
       {loading ? (
         <Loader />

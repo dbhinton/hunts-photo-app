@@ -1,4 +1,5 @@
 import Product from '../models/Product.js'
+import asyncHandler from "express-async-handler";
 import { S3Client as S3, AbortMultipartUploadCommand } from "@aws-sdk/client-s3";
 import { v4 as uuidv4 } from 'uuid';
 const s3 = new S3();
@@ -15,7 +16,7 @@ async function productIndex(req, res){
     }
 }
 
-async function productDetail(req, res){
+const productDetails = asyncHandler(async (req, res) => {
     try {
         const product = await Product.findById(req.params.id)
         if(product){
@@ -28,7 +29,7 @@ async function productDetail(req, res){
     } catch (error) {
         console.log({message: 'product id not found'})
     }
-}
+  })
 
 
-export {productIndex, productDetail}
+export {productIndex, productDetails}

@@ -2,9 +2,15 @@ import Layout from "./pages/Layout/Layout";
 import "./bootstrap.min.css";
 import { Route, Routes } from "react-router-dom";
 import Home from "./pages/Home/Home";
-import Product from './pages/Product/Product'
-import ProductDetail from './pages/ProductDetail/ProductDetail'
-import Cart from './pages/Cart/Cart'
+import Product from "./pages/Product/Product";
+import ProductDetails from "./pages/ProductDetails/ProductDetails";
+import Cart from "./pages/Cart/Cart";
+import Login from "./pages/Login/Login";
+import Register from "./pages/Register/Register";
+import UserProfile from './pages/UserProfile/UserProfile'
+import Shipping from "./pages/Shipping/Shipping";
+import Payment from "./pages/Payment/Payment";
+import PaymentMethod from "./pages/PaymentMethod/PaymentMethod";
 
 function App() {
   return (
@@ -12,10 +18,16 @@ function App() {
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
-          <Route path='/products' element={<Product />}/>
-          <Route path='/product/:id' element={<ProductDetail />}/>
-          <Route path='/cart/' element={<Cart />}/>
-          <Route path='/cart/:id' element={<Cart />}/>
+          <Route path="/login/" element={<Login />} />
+          <Route path="/register/" element={<Register />} />
+          <Route path="/profile/" element={<UserProfile />} />
+          <Route path="/products" element={<Product />} />
+          <Route path="/product/:id" element={<ProductDetails />} />
+          <Route path="/cart/" element={<Cart />} />
+          <Route path="/cart/:id" element={<Cart />} />
+          <Route path="/shipping" element={<Shipping />}/>
+          <Route path="/payment" element={<Payment/>}/>
+          <Route path="/paymentmethod" element={<PaymentMethod />}/>
         </Route>
       </Routes>
     </>

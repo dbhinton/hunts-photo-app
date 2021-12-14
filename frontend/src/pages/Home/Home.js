@@ -18,7 +18,7 @@ export default function Home() {
   return (
     <>
 
-      <Container>
+      <Container className='mt-5'>
         <h1>Latest Products</h1>
         {loading ? (
           <Loader />

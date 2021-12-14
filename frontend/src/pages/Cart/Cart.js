@@ -38,7 +38,7 @@ export default function Cart() {
 
   const checkoutHandler = () => {
       console.log('checkout')
-      navigate(`login?/redirect=shipping`)
+      navigate(`/login?/redirect=/shipping`)
   }
 
   return (
@@ -63,7 +63,7 @@ export default function Cart() {
                     </Col>
                     <Col className="mx-5 px-5" md={3}>
                       <Link
-                        to={`product/${item.product}`}
+                        to={`/product/${item.product}`}
                         style={{ color: "grey" }}
                       >
                         {item.name}
