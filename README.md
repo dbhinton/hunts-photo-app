@@ -10,7 +10,7 @@
 ![alt text](https://i.imgur.com/DmmxaXY.png)
 ![alt text](https://i.imgur.com/3rgvEbz.jpg)
 
-![alt text](https://i.imgur.com/fq2Oge6.png)
+![alt text](https://i.imgur.com/IHhq8IY.png)
 ## Link to Web App
 ### [Hunts-Photo](https://hunts-photo.herokuapp.com//)<br />
 ### Tech used: React.js, Bootstrap, MongoDB, Node.js, Express.js, Mongoose, EJS, CSS, Heroku, Photoshop
