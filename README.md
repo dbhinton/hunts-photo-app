@@ -15,7 +15,7 @@
 ### [Hunts-Photo](https://hunts-photo.herokuapp.com//)<br />
 ### Tech used: React.js, Bootstrap, MongoDB, Node.js, Express.js, Mongoose, EJS, CSS, Heroku, Photoshop
 ### Future Enhancements: 
-* Add Buyer, Seller, Review Functionality
+* Add Seller, Review Functionality
 * Add styling
 * Ability to Accept Payments (Paypal API)
 * Add ability for users to follow each other, upload products (Make marketplace 2 sided)
