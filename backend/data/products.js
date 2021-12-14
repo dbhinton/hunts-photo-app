@@ -12,7 +12,7 @@ const products = [
     numReviews: 12,
   },
   {
-    name: "Sony A7III Mirrorless Camera",
+    name: "Sony A7S Mirrorless Camera",
     image: "https://i.imgur.com/pUWJJpQ.jpg",
     description:
       "Introducing the iPhone 11 Pro. A transformative triple-camera system that adds tons of capability without complexity. An unprecedented leap in battery life",
