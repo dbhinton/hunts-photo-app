@@ -11,6 +11,10 @@ console.log('hello')
 
 const app = express()
 
+if (process.env.NODE_ENV === 'development') {
+  app.use(morgan('dev'))
+}
+
 app.use(express.json())
 
 dotenv.config()
@@ -24,11 +28,9 @@ app.use('/api/users', userRoutes);
 
 
 const __dirname = path.resolve()
-console.log(__dirname)
 app.use('/uploads', express.static(path.join(__dirname, '/uploads')))
 
 if (process.env.NODE_ENV === 'production') {
-  console.log(__dirname)
   app.use(express.static(path.join(__dirname, '/frontend/build')))
 
   app.get('*', (req, res) =>
