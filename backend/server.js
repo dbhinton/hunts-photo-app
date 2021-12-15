@@ -7,7 +7,7 @@ import {notFound, errorHandler} from './middleware/error.js'
 import path from 'path'
 
 
-
+console.log('hello')
 
 const app = express()
 
@@ -24,9 +24,11 @@ app.use('/api/users', userRoutes);
 
 
 const __dirname = path.resolve()
+console.log(__dirname)
 app.use('/uploads', express.static(path.join(__dirname, '/uploads')))
 
 if (process.env.NODE_ENV === 'production') {
+  console.log(__dirname)
   app.use(express.static(path.join(__dirname, '/frontend/build')))
 
   app.get('*', (req, res) =>
@@ -37,6 +39,7 @@ if (process.env.NODE_ENV === 'production') {
     res.send('API is running....')
   })
 }
+console.log(__dirname)
 
 app.use(notFound)
 app.use(errorHandler)
