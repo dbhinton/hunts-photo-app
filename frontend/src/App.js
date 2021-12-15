@@ -9,7 +9,7 @@ import Login from "./pages/Login/Login";
 import Register from "./pages/Register/Register";
 import UserProfile from './pages/UserProfile/UserProfile'
 import Shipping from "./pages/Shipping/Shipping";
-import Payment from "./pages/Payment/Payment";
+import PlaceOrder from "./pages/PlaceOrder/PlaceOrder";
 import PaymentMethod from "./pages/PaymentMethod/PaymentMethod";
 
 function App() {
@@ -26,8 +26,9 @@ function App() {
           <Route path="/cart/" element={<Cart />} />
           <Route path="/cart/:id" element={<Cart />} />
           <Route path="/shipping" element={<Shipping />}/>
-          <Route path="/payment" element={<Payment/>}/>
-          <Route path="/paymentmethod" element={<PaymentMethod />}/>
+          
+          <Route path="/payment" element={<PaymentMethod />}/>
+          <Route path="/placeorder" element={<PlaceOrder />}/>
         </Route>
       </Routes>
     </>
