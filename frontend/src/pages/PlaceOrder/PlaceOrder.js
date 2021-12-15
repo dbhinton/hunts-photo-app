@@ -27,6 +27,7 @@ export default function PlaceOrder() {
                 <strong>Address: </strong>
                 {address}, {city}, {state}, {postalCode}, {country},
               </p>
+
               
             </ListGroup.Item>
             <ListGroup.Item>
