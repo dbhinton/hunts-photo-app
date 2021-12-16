@@ -41,7 +41,7 @@ const UserProfile = () => {
         });
       }
     }
-  }, [navigate, userInfo, dispatch, user, navigate]);
+  }, [navigate, userInfo, dispatch, user, credentials]);
 
   const handleSubmit = (e) => {
     e.preventDefault();

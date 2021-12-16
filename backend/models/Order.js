@@ -9,7 +9,7 @@ const orderSchema = mongoose.Schema({
     orderItems: [
         {
             name: {type: String, required: true},
-            quantity: {type: String, required: true},
+            qty: {type: String, required: true},
             image: {type: String, required: true},
             price: {type: Number, required: true},
             product: {
@@ -24,7 +24,7 @@ const orderSchema = mongoose.Schema({
         city: {type: String, required: true},
         state: {type: String, required: true},
         postalCode: {type: String, required: true},
-        street: {type: String, required: true},
+        street: {type: String},
         country: {type: String, required: true}
     },
     paymentMethod: {

@@ -118,7 +118,7 @@ export default function Cart() {
               <ListGroup.Item>
                 <Button
                   type="button"
-                  className="btn-block"
+                  className="col-12"
                   disabled={cartItems === 0}
                   onClick={checkoutHandler}
                 >Proceed to Checkout</Button>

@@ -3,6 +3,7 @@ import dotenv from 'dotenv'
 import connectDatabase from './config/database.js'
 import productRoutes from './routes/api/productRoutes.js'
 import userRoutes from './routes/api/userRoutes.js'
+import orderRoutes from './routes/api/orderRoutes.js'
 import {notFound, errorHandler} from './middleware/error.js'
 import path from 'path'
 
@@ -24,6 +25,7 @@ connectDatabase()
 
 app.use('/api/products', productRoutes);
 app.use('/api/users', userRoutes);
+app.use('/api/orders', orderRoutes);
 
 
 

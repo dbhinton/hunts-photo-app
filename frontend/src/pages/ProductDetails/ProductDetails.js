@@ -110,7 +110,7 @@ export default function ProductDetails() {
 
                 <ListGroup.Item>
                   <Button
-                    className="btn-block"
+                    className="col-12"
                     type="button"
                     disabled={product.countInStock === 0}
                     onClick = {addToCartHandler}
