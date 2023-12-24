@@ -41,7 +41,7 @@
     "uuidv4": "^6.2.13"
   },
   "devDependencies": {
-    "concurrently": "^6.4.0",
+    "concurrently": "^8.2.2",
     "mocha": "^10.2.0",
     "nodemon": "^3.0.2"
   },
